@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="mr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>सार्वजनिक दुर्गादेवी नवरात्र उत्सव मंडळ, मुरुड</title>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#2a0509;--bg2:#4a0b12;--red:#8f1a22;--gold:#d9a640;--gold2:#f3d98b;--cream:#fbf1dc;--ink:#fbf1dc;--mute:#e3cfa8;--card:rgba(255,236,190,.07);--line:rgba(217,166,64,.35)}
+:root:not([data-theme="dark"]){}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#2a0509}}
+*{box-sizing:border-box;margin:0}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.7 "Noto Sans Devanagari",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.disp{font-family:"Tiro Devanagari Marathi",Georgia,serif;font-weight:400;line-height:1.35}
+.gold{background:linear-gradient(120deg,var(--gold2),var(--gold) 55%,#b97f24);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:10px 5vw;background:rgba(42,5,9,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--gold2);text-decoration:none;font-family:"Tiro Devanagari Marathi",serif;font-size:16px}
+.logo{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:50% 25%;border:2px solid var(--gold);background:#fff;flex:none}
+.menu{display:flex;gap:6px;list-style:none;padding:0}
+.menu a{color:var(--cream);text-decoration:none;padding:8px 14px;border-radius:99px;font-size:15px;transition:.25s}
+.menu a:hover,.menu a:focus-visible{background:var(--gold);color:#3a0a0e;outline:none}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;cursor:pointer}
+.burger i{display:block;height:2px;background:var(--gold2);margin:6px 11px;transition:.3s}
+.burger.on i:nth-child(1){transform:translateY(8px) rotate(45deg)}.burger.on i:nth-child(2){opacity:0}.burger.on i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+@media(max-width:760px){.burger{display:block}.brand span{max-width:200px;font-size:13px;line-height:1.3}
+.menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(42,5,9,.97);padding:10px 5vw 18px;gap:2px;max-height:0;overflow:hidden;opacity:0;transition:.35s;border-bottom:1px solid var(--line)}
+.menu.open{max-height:360px;opacity:1}.menu a{display:block;padding:13px 10px;font-size:17px}}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:110px 5vw 90px;position:relative;overflow:hidden;
+background:radial-gradient(ellipse at 50% 38%,#7a1620 0,var(--bg2) 38%,var(--bg) 78%)}
+.rays{position:absolute;left:50%;top:38%;width:min(150vw,1400px);aspect-ratio:1;translate:-50% -50%;opacity:.16;animation:spin 140s linear infinite;
+background:repeating-conic-gradient(from 0deg,var(--gold) 0 3deg,transparent 3deg 15deg);-webkit-mask:radial-gradient(circle,#000 0,transparent 62%);mask:radial-gradient(circle,#000 0,transparent 62%)}
+@keyframes spin{to{rotate:360deg}}
+#fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-in{position:relative;z-index:2;max-width:900px}
+.badge{display:inline-block;padding:6px 20px;border:1px solid var(--gold);border-radius:99px;color:var(--gold2);background:rgba(217,166,64,.1);font-size:15px;margin-bottom:26px}
+.frame{width:clamp(190px,34vw,290px);aspect-ratio:1;margin:0 auto 30px;border-radius:50%;padding:7px;position:relative;
+background:conic-gradient(var(--gold2),#b97f24,var(--gold2),#b97f24,var(--gold2));box-shadow:0 0 70px rgba(243,217,139,.35),0 0 0 10px rgba(217,166,64,.12)}
+.frame::after{content:"";position:absolute;inset:-18px;border:1px dashed var(--line);border-radius:50%;animation:spin 60s linear infinite reverse}
+.frame img{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:50% 20%;background:#fff;display:block}
+h1{font-size:clamp(30px,6.2vw,64px);text-wrap:balance;filter:drop-shadow(0 4px 24px rgba(0,0,0,.45))}
+.hero p{color:var(--mute);margin:16px auto 30px;max-width:540px}
+.btn{display:inline-block;padding:13px 30px;border-radius:99px;text-decoration:none;font-weight:600;color:#3a0a0e;background:linear-gradient(120deg,var(--gold2),var(--gold));box-shadow:0 8px 28px rgba(217,166,64,.3);transition:.3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 34px rgba(217,166,64,.5)}
+.btn:focus-visible{outline:3px solid var(--cream);outline-offset:3px}
+.jub{position:absolute;z-index:3;top:calc(84px + env(safe-area-inset-top,0px));right:4vw;width:clamp(84px,13vw,170px);filter:drop-shadow(0 6px 18px rgba(0,0,0,.5)) drop-shadow(0 0 16px rgba(243,217,139,.3));animation:fl 5s ease-in-out infinite}
+@keyframes fl{50%{translate:0 -7px}}
+@media(max-width:480px){.jub{width:78px;right:3vw}}
+a.box{display:block;color:inherit;text-decoration:none;cursor:pointer}
+a.box:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+.more{display:inline-block;margin-top:8px;color:var(--gold);font-size:14px}
+#detail{display:none;min-height:100svh;padding:120px 5vw 80px;background:radial-gradient(ellipse at 50% 0,#6a1119 0,var(--bg2) 40%,var(--bg) 85%)}
+body.det #detail{display:block;animation:pg .5s ease}
+body.det header.hero,body.det section.s{display:none}
+@keyframes pg{from{opacity:0;translate:0 16px}}
+.dc{max-width:720px;margin:0 auto;text-align:center;padding:42px 26px}
+.dc .ic{width:96px;height:96px;margin-bottom:18px;border-color:var(--gold);box-shadow:0 0 40px rgba(243,217,139,.25)}
+.dc .ic svg{width:46px;height:46px}
+.dc h2{font-size:clamp(30px,6vw,52px);margin:6px 0 4px}
+.dc .dd{font-family:"Tiro Devanagari Marathi",serif;font-size:22px;color:var(--gold2)}
+.ph{display:block;width:auto;max-width:min(100%,560px);margin:22px auto 0;border-radius:18px;border:2px solid var(--gold);box-shadow:0 12px 36px rgba(0,0,0,.45);height:auto}
+.row{margin:22px auto 0;padding:16px 20px;border:1px solid var(--line);border-radius:16px;background:rgba(0,0,0,.18);max-width:460px}
+.row small{display:block;color:var(--gold);font-size:14px}
+.row div{font-size:20px;overflow-wrap:anywhere}
+.nv{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:34px}
+.nv a{color:var(--gold2);text-decoration:none;padding:10px 18px;border:1px solid var(--line);border-radius:99px;font-size:15px;transition:.25s}
+.nv a:hover{background:var(--gold);color:#3a0a0e}
+.scroll{position:absolute;bottom:22px;left:50%;translate:-50% 0;width:26px;height:44px;border:2px solid var(--gold);border-radius:14px;z-index:2}
+.scroll::after{content:"";position:absolute;left:50%;top:7px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--gold2);animation:dot 1.8s infinite}
+@keyframes dot{0%{opacity:1;translate:0 0}80%,100%{opacity:0;translate:0 16px}}
+.diya{position:absolute;bottom:12%;width:22px;height:22px;z-index:1}
+.diya::before{content:"";position:absolute;left:50%;top:-18px;width:10px;height:18px;margin-left:-5px;border-radius:50% 50% 50% 50%/70% 70% 30% 30%;background:linear-gradient(#fff6c8,#ffb52e);box-shadow:0 0 22px 8px rgba(255,181,46,.55);animation:flick 2.2s ease-in-out infinite}
+.diya::after{content:"";position:absolute;inset:6px 0 0;border-radius:0 0 22px 22px;background:linear-gradient(#e0a13a,#8a5a14)}
+.d1{left:7%}.d2{right:7%;animation-delay:.6s}.d1::before{animation-delay:.4s}
+@keyframes flick{50%{transform:scale(1.15,.92);opacity:.85}}
+@media(max-width:600px){.diya{display:none}}
+section.s{padding:92px 5vw;position:relative}
+.wrap{max-width:1120px;margin:0 auto}
+.head{text-align:center;margin-bottom:52px}
+.head h2{font-size:clamp(28px,4.6vw,46px)}
+.head p{color:var(--mute);margin-top:6px}
+.div{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:18px;color:var(--gold)}
+.div::before,.div::after{content:"";height:1px;width:min(120px,22vw);background:linear-gradient(90deg,transparent,var(--gold))}
+.div::after{transform:scaleX(-1)}
+#karyakarini{background:linear-gradient(var(--bg),#350709 50%,var(--bg))}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{position:relative;padding:30px 24px;text-align:center;border:1px solid var(--line);border-radius:22px;background:var(--card);backdrop-filter:blur(10px);box-shadow:0 14px 40px rgba(0,0,0,.28);transition:.35s}
+.card::before{content:"";position:absolute;inset:7px;border:1px solid rgba(217,166,64,.15);border-radius:16px;pointer-events:none}
+.card:hover{transform:translateY(-8px);border-color:var(--gold);box-shadow:0 22px 50px rgba(0,0,0,.4),0 0 34px rgba(217,166,64,.2)}
+.ic{width:62px;height:62px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,rgba(217,166,64,.28),rgba(217,166,64,.05));border:1px solid var(--line)}
+.ic svg{width:30px;height:30px;stroke:var(--gold2);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.role{color:var(--gold);font-size:15px}
+.name{font-family:"Tiro Devanagari Marathi",serif;font-size:23px;margin-top:4px;overflow-wrap:anywhere}
+.name.empty,.empty{color:var(--mute);opacity:.7;font-size:17px}
+#karyakram{background:radial-gradient(ellipse at 50% 0,#5a0f17 0,var(--bg) 70%)}
+.tl{position:relative;max-width:860px;margin:0 auto;padding-left:0}
+.tl::before{content:"";position:absolute;left:30px;top:0;bottom:0;width:2px;background:linear-gradient(var(--gold),rgba(217,166,64,.1));transform-origin:top;transform:scaleY(var(--p,0))}
+.item{position:relative;display:grid;grid-template-columns:62px 1fr;gap:18px;margin-bottom:22px;opacity:0;translate:0 24px;transition:.7s}
+.item.in{opacity:1;translate:0 0}
+.item .ic{margin:0;background:var(--bg2);position:relative;z-index:1;border-color:var(--gold)}
+.item:hover .ic{box-shadow:0 0 24px rgba(243,217,139,.5)}
+.box{padding:18px 22px;border:1px solid var(--line);border-radius:18px;background:var(--card);backdrop-filter:blur(8px);transition:.3s}
+.item:hover .box{border-color:var(--gold);transform:translateX(5px)}
+.when{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
+.date{font-family:"Tiro Devanagari Marathi",serif;font-size:22px;color:var(--gold2)}
+.day{color:var(--mute);font-size:15px}
+.what{font-size:19px;margin-top:4px}
+.who{color:var(--mute);font-size:15px;margin-top:2px}
+.who b{color:var(--gold);font-weight:500}
+@media(max-width:480px){.item{grid-template-columns:48px 1fr;gap:12px}.ic{width:48px;height:48px}.ic svg{width:24px;height:24px}.tl::before{left:23px}.box{padding:14px 16px}}
+#sampark{text-align:center}
+.cbox{max-width:620px;margin:0 auto;padding:36px 28px}
+footer{background:#14030510;background:#160305;text-align:center;padding:56px 5vw calc(26px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line)}
+footer .logo{width:72px;height:72px;margin:0 auto 14px;display:block}
+footer h3{font-size:clamp(19px,3vw,26px);color:var(--gold2)}
+footer small{display:block;margin-top:38px;padding-top:18px;border-top:1px solid rgba(217,166,64,.18);font:400 13px/1 system-ui,sans-serif;letter-spacing:.14em;color:var(--gold);opacity:.9}
+.rv{opacity:0;translate:0 22px;transition:opacity .8s,translate .8s}.rv.in{opacity:1;translate:0 0}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.item{opacity:1;translate:none}.tl::before{transform:none}}
+</style></head><body>
+<nav><a class="brand" href="#top"><img class="logo" src="assets/images/logo-durgadevi.jpg" alt="श्री दुर्गादेवी"><span>दुर्गादेवी नवरात्र उत्सव मंडळ</span></a>
+<button class="burger" aria-label="मेनू" aria-expanded="false"><i></i><i></i><i></i></button>
+<ul class="menu"><li><a href="#top">मुख्यपृष्ठ</a></li><li><a href="#karyakarini">कार्यकारिणी</a></li><li><a href="#karyakram">कार्यक्रम पत्रिका</a></li><li><a href="#sampark">संपर्क</a></li></ul></nav>
+
+<header class="hero" id="top"><div class="rays"></div><canvas id="fx"></canvas><i class="diya d1"></i><i class="diya d2"></i>
+<img class="jub" src="assets/images/rajat-mahotsav-25.webp" alt="२५ वे रौप्य महोत्सवी वर्ष"><div class="hero-in"><span class="badge">नवरात्र उत्सव २०२६</span>
+<div class="frame"><img src="assets/images/logo-durgadevi.jpg" alt="श्री दुर्गादेवी"></div>
+<h1 class="gold">सार्वजनिक दुर्गादेवी नवरात्र उत्सव मंडळ, मुरुड</h1>
+<p>उत्सवाचे नियोजन व संचालन करणारी कार्यरत टीम</p>
+<a class="btn" href="#karyakram">कार्यक्रम पत्रिका पहा</a></div><span class="scroll"></span></header>
+
+<section class="s" id="karyakarini"><div class="wrap">
+<div class="head rv"><h2 class="gold">मंडळाची कार्यकारिणी समिती</h2><p>उत्सवाचे नियोजन व संचालन करणारी कार्यरत टीम</p><div class="div">❖</div></div>
+<div class="grid" id="committee"></div></div></section>
+
+<section class="s" id="karyakram"><div class="wrap">
+<div class="head rv"><h2 class="gold">श्री दुर्गादेवी नवरात्र उत्सव मंडळ, मुरुड</h2><h3 style="margin-top:6px;color:var(--gold2);font-size:clamp(20px,3vw,28px)">कार्यक्रम पत्रिका</h3><div class="div">❖</div></div>
+<div class="tl" id="tl"></div></div></section>
+
+<section class="s" id="sampark"><div class="wrap"><div class="head rv"><h2 class="gold">संपर्क</h2><div class="div">❖</div></div>
+<div class="card cbox rv"><div class="ic"><svg viewBox="0 0 24 24" style="width:30px;height:30px;stroke:var(--gold2);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div><a class="btn" href="https://www.google.com/maps/place/%E0%A4%B8%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%9C%E0%A4%A8%E0%A4%BF%E0%A4%95+%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A4%BE%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A5%80+%E0%A4%A8%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%B0+%E0%A4%89%E0%A4%A4%E0%A5%8D%E0%A4%B8%E0%A4%B5+%E0%A4%AE%E0%A4%82%E0%A4%A1%E0%A4%B3+%E0%A4%AE%E0%A5%81%E0%A4%B0%E0%A5%81%E0%A4%A1/@17.5345149,73.9060915,19.69z/data=!4m14!1m7!3m6!1s0x3bc2231adcbdc67d:0x6ca84b9a43699f4b!2sTarali+Dam!8m2!3d17.5444392!4d73.88454!16s%2Fg%2F1twyx_19!3m5!1s0x3bc22300195cfc3b:0x2636dc110e6c67f0!8m2!3d17.5345075!4d73.9066152!16s%2Fg%2F11nr0chzlf?entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">नकाशावर स्थान पहा</a><br><a class="btn" style="margin-top:14px" href="https://www.instagram.com/sarvjanik_durgadevi_murud_2002?cplk=MThrMWU4cGFnNHdqdw==" target="_blank" rel="noopener">Instagram पेज पहा</a></div></div></section>
+
+<main id="detail"></main>
+<footer><img class="logo" src="assets/images/logo-durgadevi.jpg" alt=""><h3 class="disp">सार्वजनिक दुर्गादेवी नवरात्र उत्सव मंडळ, मुरुड</h3><a href="https://www.instagram.com/sarvjanik_durgadevi_murud_2002?cplk=MThrMWU4cGFnNHdqdw==" target="_blank" rel="noopener" style="display:inline-block;margin-top:18px;color:var(--gold2);text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:8px 20px;font-size:15px">Instagram वर आम्हाला फॉलो करा</a><small>Powered by Shree Pimpale</small></footer>
+
+<script>
+/* ===== संपादनयोग्य माहिती: हस्तलिखित चित्रातील नावे/कार्यक्रम येथे भरा ===== */
+const COMMITTEE=[["अध्यक्ष","सुशांत जाधव"],["उपाध्यक्ष","सागर देशमुख"],["सचिव","प्रणव जाधव"],["सहसचिव","राकेश कांबळे"],["खजिनदार","राजशेखर सुतार|विराज गायकवाड"],["उपखजिनदार","वरद कोळी"]];
+const PROGRAM={"11":["bhajan","भजन","Committee",["भजनी मंडळ मुरुड"]],"12":["kirtan","कीर्तन","Vijay Maharaj & Bapu Maharaj",["गजर कीर्तनाचा","डॉ. सुहास महाराज फडतरे"]],"13":["speech","वक्तृत्व स्पर्धा","Ganesh & Shubham"],"14":["garba","रास गरबा","Committee"],"15":["garba","डान्स इंडिया डान्स","Akshay & Harish & Varad"],"16":["other","होम मिनिस्टर","Committee"],"17":["other","हळदी कुंकू समारंभ","Committee",["लहान मुलांच्या स्पर्धा ३ ते ५"]],"18":["other","महाप्रसाद","Ganesh Lohar & Babu Lohar",["राज सुतार भजन ६ ते ८"]],"19":["dandiya","फॅन्सी दांडिया","Ganesh Lohar & Babu Lohar"],"20":["garba","रास गरबा","Committee"],"21":["other","भव्य मिरवणूक","Committee"]};
+const TIME={"11":"रात्री ९ वा.","12":"रात्री ९ वा.","13":"रात्री ८:३० वा.","14":"रात्री ९:३० वा.","15":"रात्री ८:३० वा.","16":"रात्री ९:०० वा.","17":"रात्री ७ वा.","18":"रात्री ६ वा.","19":"रात्री ९ वा.","20":"रात्री ९:३० वा.","21":"दुपारी ३ वा."};
+const PHOTO={"19":"assets/images/din-19.webp","18":"assets/images/din-18.webp","17":"assets/images/din-17.webp","16":"assets/images/din-16.webp","15":"assets/images/din-15.webp","14":"assets/images/din-14.webp","13":"assets/images/din-13.webp","12":"assets/images/din-12.webp","11":"assets/images/din-11.webp"};
+PHOTO["20"]=PHOTO["14"];
+const VIDEO={"21":["assets/video/din-21-video.mp4","assets/images/din-21-poster.webp"]};
+const VAR=["रवीवार","सोमवार","मंगळवार","बुधवार","गुरुवार","शुक्रवार","शनिवार"];
+const P=(d)=>`<svg viewBox="0 0 24 24">${d}</svg>`;
+const ICON={
+bhajan:P('<path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/>'),
+kirtan:P('<path d="M12 3a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>'),
+speech:P('<path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/>'),
+garba:P('<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v5M12 16v5M3 12h5M16 12h5"/>'),
+dandiya:P('<path d="M5 19L17 7M8 21L20 9"/><circle cx="18.5" cy="5.5" r="1.5"/><circle cx="21" cy="8" r="0"/>'),
+hom:P('<path d="M12 3c3 3 5 5.5 5 9a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-8z"/><path d="M5 21h14"/>'),
+other:P('<path d="M12 2l2.4 6.6L21 9l-5.3 4.2L17.5 20 12 16l-5.5 4 1.8-6.8L3 9l6.6-.4z"/>'),
+user:P('<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/>')};
+document.getElementById("committee").innerHTML=COMMITTEE.map(([r,n])=>`<div class="card rv"><div class="ic">${ICON.user}</div><div class="role">${r}</div><div class="name ${n?'':'empty'}">${n.split('|').join('<br>')}</div></div>`).join("");
+document.getElementById("tl").innerHTML=Object.entries(PROGRAM).map(([d,[t,w,c,x]])=>{
+const dt=new Date(2026,9,+d);return `<div class="item"><div class="ic">${ICON[t]||ICON.other}</div><a class="box" href="#/din/${d}"><div class="when"><span class="date">${d}/10/2026</span><span class="day">${VAR[dt.getDay()]}${TIME[d]?" · "+TIME[d]:""}</span></div>
+<div class="what ${w?'':'empty'}">${w||'कार्यक्रम भरावा'}</div>${x?`<div class="who">${x.join(' · ')}</div>`:''}<div class="who"><b>जबाबदारी:</b> ${c}</div><span class="more">तपशील पहा ›</span></a></div>`}).join("");
+/* menu */
+const b=document.querySelector(".burger"),m=document.querySelector(".menu");
+b.onclick=()=>{const o=m.classList.toggle("open");b.classList.toggle("on",o);b.setAttribute("aria-expanded",o)};
+m.onclick=e=>{if(e.target.tagName==="A"){m.classList.remove("open");b.classList.remove("on")}};
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll(".rv,.item").forEach(e=>io.observe(e));
+const tl=document.getElementById("tl");
+addEventListener("scroll",()=>{const r=tl.getBoundingClientRect();tl.style.setProperty("--p",Math.max(0,Math.min(1,(innerHeight*.7-r.top)/r.height)))},{passive:true});
+/* gold particles */
+(()=>{const c=document.getElementById("fx"),x=c.getContext("2d");if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+let w,h,ps=[];const rs=()=>{w=c.width=c.offsetWidth;h=c.height=c.offsetHeight;ps=Array.from({length:Math.min(55,w/22|0)},()=>({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.8+.4,v:Math.random()*.4+.15,a:Math.random()}))};
+rs();addEventListener("resize",rs);
+(function f(){x.clearRect(0,0,w,h);ps.forEach(p=>{p.y-=p.v;p.x+=Math.sin(p.y/40+p.a*6)*.25;if(p.y<-5){p.y=h+5;p.x=Math.random()*w}
+x.beginPath();x.fillStyle=`rgba(243,205,110,${.25+.5*Math.abs(Math.sin(p.y/60+p.a*6))})`;x.shadowColor="#f3d98b";x.shadowBlur=8;x.arc(p.x,p.y,p.r,0,6.3);x.fill()});requestAnimationFrame(f)})()})();
+
+/* detail pages: #/din/11 .. #/din/21 */
+const dk=Object.keys(PROGRAM),det=document.getElementById("detail");
+function route(){const m=location.hash.match(/^#\/din\/(\d+)$/);
+if(m&&PROGRAM[m[1]]){const d=m[1],[t,w,c,x]=PROGRAM[d],i=dk.indexOf(d),dt=new Date(2026,9,+d),pv=dk[i-1],nx=dk[i+1];
+det.innerHTML=`<div class="card dc"><div class="ic">${ICON[t]||ICON.other}</div><div class="dd">${d}/10/2026 · ${VAR[dt.getDay()]}</div><h2 class="gold">${w}</h2>
+${PHOTO[d]?`<img class="ph" src="${PHOTO[d]}" alt="${w}">`:''}${VIDEO[d]?`<video class="ph" controls playsinline preload="metadata" poster="${VIDEO[d][1]}" src="${VIDEO[d][0]}"></video>`:''}${TIME[d]?`<div class="row"><small>वेळ</small><div>${TIME[d]}</div></div>`:''}${x?x.map(e=>`<div class="row"><small>विशेष</small><div>${e}</div></div>`).join(''):''}
+<div class="row"><small>जबाबदारी</small><div>${c}</div></div>
+<div class="nv">${pv?`<a href="#/din/${pv}">‹ ${pv}/10</a>`:'<span></span>'}<a href="#karyakram">सर्व कार्यक्रम</a>${nx?`<a href="#/din/${nx}">${nx}/10 ›</a>`:'<span></span>'}</div></div>`;
+document.body.classList.add("det");scrollTo(0,0);document.title=w+" – दुर्गादेवी नवरात्र उत्सव मंडळ, मुरुड";return}
+const was=document.body.classList.contains("det");document.body.classList.remove("det");
+if(was){const el=document.querySelector(location.hash.length>1&&!location.hash.startsWith("#/")?location.hash:"#karyakram");requestAnimationFrame(()=>el&&el.scrollIntoView())}}
+addEventListener("hashchange",route);route();
+</script></body></html>
